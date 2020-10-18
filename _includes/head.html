@@ -1,12 +1,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{% unless page.title == "Slicer" %}{{ page.title }} - {% endunless %}{{ site.title }}</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta name="keywords" content="open,free,secure,app,messaging,golang,communication">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta property="og:title" content="{{ page.title }} - {{ site.title }}">
+    <meta property="og:title" content="{% unless page.title == "Slicer" %}{{ page.title }} - {% endunless %}{{ site.title }}">
     <meta name="og:description" content="{{ site.description }}">
     <meta name="theme-color" content="#8554e8">
 
