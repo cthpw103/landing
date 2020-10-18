@@ -44,7 +44,11 @@ h4 {
     background-position-y: bottom;
     color:white !important;
     
-    button { max-width: 130px; font-size: 1.2em; }
+    button { 
+        max-width: 130px; 
+        font-size: 1.2em; 
+        margin-top: 1em;
+    }
 }
 
 .section {
