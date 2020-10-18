@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Slicer
+description: Open, secure communication. Not much more.
+primary: Test
 ---
 
 ## Features
