@@ -2,7 +2,7 @@
 <div class="hero" id="top">
     <h1 id="header">{{ page.title }}</h1>
     <h3>{{ page.description }}</h3>
-    {% if page.primary != null and page.primary != "" %}
-            <button type="button" class="btn btn-light">{{ page.primary }}</button>
+    {% if page.buttons.primary != null %}
+            <a type="button" class="btn btn-light" href="{{ page.buttons.primary.href }}">{{ page.buttons.primary.name }}</a>
     {% endif %}
 </div>
