@@ -22,10 +22,7 @@ html,body {
 	nav .menu { display: inline-block !important }
 }
 h1 {
-	font: {
-		size: 3em;
-		weight: 900;
-	}
+	font-size: 3em;
 }
 h2 {
 	font: {
@@ -60,7 +57,11 @@ h4 {
         max-width: 130px; 
         font-size: 1.2em; 
         margin-top: 1em;
-    }
+	}
+	
+	h1 {
+		font-weight: bolder;
+	}
 }
 
 .section {
