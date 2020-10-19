@@ -3,11 +3,8 @@
 
 $primary: #8454e8;
 
-html, body {
+html {
 	font-size: 13px;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
 }
 @media screen and (min-width: 800px) { html { font-size: 15px; } }
 @media screen and (min-width: 1200px) { html { font-size: 17px; } }
