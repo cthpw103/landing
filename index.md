@@ -2,7 +2,10 @@
 layout: default
 title: Slicer
 description: Open, secure communication. Not much more.
-primary: Test
+buttons:
+  primary:
+    name: Source
+    href: https://github.com/open-slicer/cell
 ---
 
 ## Features

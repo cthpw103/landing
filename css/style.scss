@@ -1,10 +1,15 @@
 ---
 --- 
 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 $primary: #8454e8;
 
-html {
-	font-size: 13px;
+html,body {
+	font: {
+		size: 13px;
+		family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	}
 }
 @media screen and (min-width: 800px) { html { font-size: 15px; } }
 @media screen and (min-width: 1200px) { html { font-size: 17px; } }
@@ -18,9 +23,7 @@ html {
 	.hero .container { display: none !important }
 }
 h1 {
-	font: {
-		size: 3em;
-	}
+	font-size: 3em;
 }
 h2 {
 	font: {
@@ -62,7 +65,8 @@ p {
 		justify-content: center;
 		flex-direction: column;
 	}
-    button { 
+    
+    button, a { 
         max-width: 130px; 
         font-size: 1.2em; 
         margin-top: 1em;
@@ -94,6 +98,9 @@ p {
 				animation-delay: 6s;
 			}
 		}
+	}
+	h1 {
+		font-weight: bolder;
 	}
 }
 @keyframes fadeinout {
