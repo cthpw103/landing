@@ -15,6 +15,7 @@ html {
 	#loader { width: 40% !important }
 	nav a { display: none !important }
 	nav .menu { display: inline-block !important }
+	.hero .container { display: none !important }
 }
 h1 {
 	font: {
@@ -47,19 +48,60 @@ p {
     height: 100vh;
     position: relative;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    flex-direction: row;
     padding: 0 3em;
     background: url(../img/drawing.svg) no-repeat;
     background-size: cover;
     background-position-y: bottom;
     color:white !important;
-    
+	
+	.text {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
     button { 
         max-width: 130px; 
         font-size: 1.2em; 
         margin-top: 1em;
-    }
+	}
+	.container {
+		position: relative;
+		justify-content: right;
+		flex-basis: 50%;
+		.icon {
+			filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.3));
+			position: absolute;
+			animation: fadeinout 9s infinite;
+			opacity: 0;
+			&#lock {
+				top: 22%;
+				left: 60%;
+				height: 30%;
+			}
+			&#mail {
+				top: 20%;
+				left: 50%;
+				height: 30%;
+				animation-delay: 3s;
+			}
+			&#free {
+				top: 18%;
+				left: 57%;
+				height: 35%;
+				animation-delay: 6s;
+			}
+		}
+	}
+}
+@keyframes fadeinout {
+	0%   {opacity:0}
+	5%  {opacity:1}
+	28%  {opacity:1}
+	33%  {opacity:0}
+	100% {opacity:0}
 }
 
 .section {
