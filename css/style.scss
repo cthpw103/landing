@@ -78,7 +78,7 @@ p {
 		.icon {
 			filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.3));
 			position: absolute;
-			animation: fadeinout 6s infinite;
+			animation: fadeinout 4.5s infinite;
 			opacity: 0;
 			&#lock {
 				top: 22%;
@@ -89,13 +89,13 @@ p {
 				top: 20%;
 				left: 50%;
 				height: 30%;
-				animation-delay: 2s;
+				animation-delay: 1.5s;
 			}
 			&#free {
 				top: 18%;
 				left: 57%;
 				height: 35%;
-				animation-delay: 4s;
+				animation-delay: 3s;
 			}
 		}
 	}
