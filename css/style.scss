@@ -45,6 +45,13 @@ p {
 		size: 1.2em;
 	}
 }
+a {
+	color: black;
+	text-decoration: none;
+	&[href] {
+		color: #0069ff
+	}
+}
 
 
 .hero {
