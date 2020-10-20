@@ -86,4 +86,11 @@ $(function(){
             if (nav.hasClass('scrolled')) nav.removeClass('scrolled sleep');
         }
     }, 150);
+
+    let d = new Date();
+    if (d.getMonth() == 10 && (d.getDate() > 0 && d.getDate() < 7)) {
+        let originalSrc = $(".laptop").attr("src")
+        $(".laptop").attr("src", originalSrc.replace("laptop", "thinkpad"))
+        console.log("Happy birthday Alan!")
+    }
 });
